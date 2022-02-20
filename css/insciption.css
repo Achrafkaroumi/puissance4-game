@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Risque&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Reggae+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	}
+.container{
+    position: relative;
+    height: 100vh;
+}
+.container svg{
+    position: absolute;
+    width: 100%;	
+}
+.players h2{
+    font-family: 'Reggae One', cursive;
+    position: absolute;
+    top: 110px;
+    left: 400px;
+    font-size: 55px;
+}
+.players .inscription{
+    border-radius: 1.5rem;
+    position: absolute;
+    top:205px;
+    left: 405px;
+    padding: 38px;
+    background-color: var(--white);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35);
+    transition: 0.4s ease-in-out;
+}
+
+.input-group {
+    position: relative;
+    width: 100%;
+    margin: 1rem 0;
+  }
+
+  .input-group i {
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    transform: translateY(-50%);
+    font-size: 1.6rem;
+    color: var(--gray-2);
+  }
+
+  h1 {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Risque', cursive;
+   }
+
+  .input-group input {
+    font-family: 'Roboto Condensed', sans-serif;
+    width: 100%;
+    padding: 1rem 3rem;
+    font-size: 1.1rem;
+    background-color: var(--gray);
+    border-radius: 0.5rem;
+    border: 0.125rem solid var(--white);
+    outline: none;
+  }
+
+  input[type="submit"]{
+     padding: 10px 20px;
+     margin-left: 66px;
+     font-size: 20px;
+     border-radius: 5px 25px 5px;
+     border: none;
+     cursor: pointer;
+     outline: none;
+     background-color: #1da1f2;
+     color: white;
+     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35);
+ }
+
+ .image img{
+    width: 400px;
+    height: 230px;
+    position: absolute;
+    top: 390px;
+    left: 930px;
+}
+
+
+@media screen and (max-width: 770px) {
+    .players h2{
+      font-family: 'Reggae One', cursive;
+      position: absolute;
+      top: 110px;
+      left: 200px;
+      font-size: 55px;
+  }
+
+  .players .inscription{
+    position: absolute;
+    top:205px;
+    left: 205px;
+
+}
+
+}
+
+@media screen and (max-width: 570px) {
+  .players h2{
+    font-family: 'Reggae One', cursive;
+    position: absolute;
+    top: 110px;
+    left: 85px;
+    font-size: 55px;
+}
+
+  .players .inscription{
+    position: absolute;
+    top:205px;
+    left: 85px;
+  }
+
+}
+
+
+@media screen and (max-width: 485px) {
+  .players h2{
+    font-family: 'Reggae One', cursive;
+    position: absolute;
+    top: 110px;
+    left: 70px;
+    font-size: 55px;
+}
+
+  .players .inscription{
+    position: absolute;
+    top:205px;
+    left: 65px;
+  }
+
+}

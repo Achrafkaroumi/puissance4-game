@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css2?family=Risque&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+body{
+    background: url('../img/back.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container{
+    position: absolute;
+    top: 150px;
+    left: 425px;
+    border-radius: 1.5rem;
+    box-shadow: 0px 5px 15px black;
+    padding: 10px;
+    border-radius: 25px;
+    height: 450px;
+}
+
+.begin_game{
+    margin-top: 90px;
+    margin-left: 935px;
+    border: none;
+    text-decoration: none;
+    padding: 8px 30px;
+    font-size: 20px;
+    font-family: 'Acme', sans-serif;
+    background-color: rgba(11, 83, 172, 0.9);
+    border: 2px solid white;
+    border-radius: 50% 20% / 10% 40%;
+    color: white;
+    outline: none;
+}
+
+.begin_game:hover{
+    background-color: #4582B4;
+    cursor: pointer;
+}
+
+.click_button {
+    height: 52px;
+    width: 52px;
+    border-radius: 25px;
+    display: none;
+    background-color: #FF0000;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+    outline: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bt{
+    height: 52px;
+    width: 52px;
+    
+}
+
+.bt:hover >.click_button{
+    display: block;
+}
+
+
+.piece {
+    height: 50px;
+    width: 50px;
+    display:block;
+    border-radius: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -61px;
+}
+
+.player0 {
+    background-color:white; 
+}
+
+.player1 {
+    background-color: #FF0000;
+}
+
+.player2 {
+    background-color: #0000FF;	
+}
+
+.board_square {
+    height: 65px;
+    width: 65px;
+}
+
+
+#game_status{
+    width: 450px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0 0 20px black;
+    border-radius: 10px;
+    position: absolute;
+    left: 670px;
+    top: 40%;
+    transform: translate(-50%,-50%);
+    z-index: 9999;
+    padding: 10px;
+    text-align: center;
+    visibility: hidden;
+}
+
+#game_status span{
+    color: #2ecc71;
+    font-size: 45px;
+    display: block;
+    margin: 10px 0;
+}
+
+#game_status h1{
+    color: #333;
+    font-size: 25px;
+}
+
+.close , .restart{
+    margin-top: 17px;
+    margin-right: 15px;
+    font-size: 18px;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #3498db;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+
+
+#user{
+    width: 350px;
+    overflow: hidden;
+    background:linear-gradient(120DEG,#123962,#2754BA,#00AEE6,#799EB2,#b1d4e5);
+    box-shadow: 0 0 20px black;
+    border-radius: 10px;
+    position: absolute;
+    left: 680px;
+    top: 40%;
+    transform: translate(-50%,-50%);
+    z-index: 9999;
+    padding: 10px;
+    text-align: center;
+    visibility:visible;
+    color: white;
+}
+#user span{
+    font-size: 18px;
+}
+
+
+#btn{
+    margin-top: 17px;
+    margin-right: 10px;
+    font-size: 18px;
+    color: #2754BA;
+    padding: 8px 14px;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 50% 20% / 10% 40%;
+    font-family: 'Acme', sans-serif;
+    background-color: rgba(11, 83, 172, 0.9);
+    border: 2px solid white;
+    color: white;
+    outline: none;
+}
+#user #userid{
+    border: none;
+    height: 25px;
+    border-radius: 20px;
+    outline: none;
+    font-size: 20px;
+    text-align: center;
+}
+
+#game_info{
+    font-family: 'Acme', sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+
+.score{
+    border-radius: 10px 40px 10px;
+    position: absolute;
+    top:80px;
+    left: 440px;
+    padding: 15px;
+    background-color: #8ED2DF;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35);
+    transition: 0.4s ease-in-out;
+}
+a {
+    color: #333;
+}
+ .playes {
+    font-family: 'Acme', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 0px 50px;
+    text-decoration: none;
+}
+
+#scorePL {
+    font-size: 25px;
+    font-weight: bold;
+}
+.playes .p1{
+    color: red;
+}
+.playes .p2{
+    color: #0000FF;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 958px) {
+    .score{
+        position: absolute;
+        top:80px;
+        left: 390px;
+    }
+
+    .container{
+        position: absolute;
+        top: 150px;
+        left: 380px;
+    }
+    #game_status{
+        position: absolute;
+        left: 620px;
+    }
+  
+  }
+
+  @media screen and (max-width: 887px) {
+    .score{
+        position: absolute;
+        top:80px;
+        left: 300px;
+    }
+
+    .container{
+        position: absolute;
+        top: 150px;
+        left: 280px;
+    }
+
+    #game_status{
+        position: absolute;
+        left: 525px;
+    }
+  
+  }
+
+  
+  @media screen and (max-width: 797px) {
+    .score{
+        position: absolute;
+        top:80px;
+        left: 200px;
+    }
+
+    .container{
+        position: absolute;
+        top: 150px;
+        left: 180px;
+    }
+    #game_status{
+        position: absolute;
+        left: 425px;
+    }
+  
+  }
+
+  @media screen and (max-width: 697px) {
+    .score{
+        position: absolute;
+        top:80px;
+        left: 150px;
+    }
+
+    .container{
+        position: absolute;
+        top: 150px;
+        left: 120px;
+    }
+    #game_status{
+        position: absolute;
+        left: 365px;
+    }
+  
+  }
+
+  @media screen and (max-width: 648px) {
+    .score{
+        position: absolute;
+        top:80px;
+        left: 100px;
+    }
+
+    .container{
+        position: absolute;
+        top: 150px;
+        left: 90px;
+    }
+    #game_status{
+        position: absolute;
+        left: 335px;
+    }
+  
+  }
+
+  @media screen and (max-width: 597px) {
+    .score{
+        position: absolute;
+        top:80px;
+        left: 30px;
+    }
+
+    .container{
+        position: absolute;
+        top: 150px;
+        left: 10px;
+    }
+
+    #game_status{
+        position: absolute;
+        left: 250px;
+    }
+  
+  }
+
+  @media screen and (max-width: 530px) {
+    .score{
+        position: absolute;
+        top:80px;
+        left: 10px;
+    }
+
+    .container{
+        position: absolute;
+        top: 150px;
+        left: 10px;
+    }
+
+    #game_status{
+        position: absolute;
+        left: 245px;
+    }
+    .playes {
+        font-family: 'Acme', sans-serif;
+        font-size: 20px;
+        text-transform: uppercase;
+        padding: 0px 40px;
+        text-decoration: none;
+    }
+  
+  }
+
+  @media screen and (max-width: 510px) {
+    .score{
+        position: absolute;
+        top:80px;
+        left: 8px;
+        padding: 8px;
+    }
+    .playes {
+        font-family: 'Acme', sans-serif;
+        font-size: 20px;
+        text-transform: uppercase;
+        padding: 0px 40px;
+        text-decoration: none;
+    }
+  
+  }
+
+  @media screen and (max-width: 469px) {
+    .playes {
+        font-family: 'Acme', sans-serif;
+        font-size: 20px;
+        text-transform: uppercase;
+        padding: 0px 30px;
+        text-decoration: none;
+    }
+  
+  }
+
+  @media screen and (max-width: 428px) {
+    .playes {
+        font-family: 'Acme', sans-serif;
+        font-size: 20px;
+        text-transform: uppercase;
+        padding: 0px 28px;
+        text-decoration: none;
+    }
+  
+  }
+
+  @media screen and (max-width: 409px) {
+    .playes {
+        font-family: 'Acme', sans-serif;
+        font-size: 20px;
+        text-transform: uppercase;
+        padding: 0px 25px;
+        text-decoration: none;
+    }
+  
+  }
